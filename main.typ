@@ -14,10 +14,10 @@
     ),
   ),
   abstract: "Presenting a novel voting system designed to maximize privacy and minimize trust, while maintaining comprehensive verifiability. In this system, voters are able to validate their eligibility without disclosing their identities. Votes, securely encrypted, remain private throughout the voting period, and only become public once this period concludes. This feature provides an opportunity for any third party to audit the election process, from verifying the legitimacy of voter eligibility to the authenticity of the final vote tally, thereby promoting a robust and transparent democratic process.",
-  bibliography-file: "refs.bib",
+  bibliography-file: "bibliography.yml",
 )
 
-Electora is a privacy preserving, trust minimized, voting system.
+Electora is a privacy preserving, trust minimized, voting system. @electronic .
 
 Call me Ishmael. Some years ago --- never mind how long precisely ---
 having little or no money in my purse, and nothing particular to
@@ -35,7 +35,7 @@ is my substitute for pistol and ball. With a philosophical flourish
 Cato throws himself upon his sword; I quietly take to the ship. There
 is nothing surprising in this. If they but knew it, almost all men in
 their degree, some time or other, cherish very nearly the same
-feelings towards the ocean with me. @netwok2020
+feelings towards the ocean with me.
 
 There now is your insular city of the Manhattoes, belted round by
 wharves as Indian isles by coral reefs - commerce surrounds it with
@@ -75,3 +75,4 @@ Prove theorems.
 
 = Background
 #lorem(40)
+

@@ -133,7 +133,7 @@
 
   // Configure citation and bibliography styles.
   set cite(style: "numerical", brackets: true)
-  set bibliography(style: "apa", title: "References")
+  set bibliography(style: "ieee", title: "References")
 
   show figure: it => {
     show: pad.with(x: 23pt)
