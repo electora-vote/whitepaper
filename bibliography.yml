@@ -22,3 +22,9 @@ arweave:
 Information Permanence"
     url: https://www.arweave.org/yellow-paper.pdf
 
+threshold:
+    type: Web
+    title: Threshold Documentation
+    author: threshold.network
+    url: https://docs.threshold.network/
+
