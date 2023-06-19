@@ -35,6 +35,11 @@ The system is built entirely with public domain, open-source tools, enhancing tr
 = Architecture
 
 == Sismo
+Sismo @sismo utilises zero-knowledge proofs (ZKPs) and privacy-preserving technologies to aggregate and selectively disclose personal data to applications. In the context of our voting system, Sismo plays a crucial role in ensuring voters can validate their eligibility without revealing their identities, thus maintaining voter privacy.
+
+Sismo is designed to respond to the challenges of fragmented digital identities, which are dispersed across the internet in a variety of platforms (both web2 and web3). Sismo's communication protocol enables users to consolidate their digital identity data in a private Data Vault, which acts as a secure storage for personal data from various web2 and web3 accounts, credentials, and attestations. This data aggregation facility empowers users to leverage their data across multiple platforms while preserving privacy.
+
+The Data Vault acts as a prover, enabling users to generate ZKPs that attest ownership of granular pieces of data, referred to as Data Gems. Using Sismo's communication protocol, users can generate proofs to verify claims about Data Gems they own. These proofs are accepted and verified by verifiers integrated into applications, such as the voting system discussed in this paper. This allows users to selectively disclose their data without revealing the associated Data Source, underpinning the privacy-preserving feature of the voting system.
 
 
 == CBD
