@@ -1,14 +1,24 @@
-harry:
-    type: Book
-    title: Harry Potter and the Order of the Phoenix
-    author: Rowling, J. K.
-    volume: 5
-    page-total: 768
-    date: 2003-06-21
-
-electronic:
+sismo:
     type: Web
-    title: Ishkur's Guide to Electronic Music
-    serial-number: v2.5
-    author: Ishkur
-    url: http://www.techno.org/electronic-music-guide/
+    title: Sismo Documentation
+    author: Sismo
+    url: https://docs.sismo.io/sismo-docs/
+
+cbd:
+    type: Web
+    title: CBD Documentation
+    author: threshold.network
+    url: https://docs.threshold.network/applications/threshold-access-control/conditions-based-decryption-cbd
+
+arweave:
+    type: Article
+    author:
+        - Williams, Sam
+        - Diordiiev, Viktor
+        - Berman, Lev
+        - Raybould, India
+        - Uemlianin, Ivan
+    title: "Arweave: A Protocol for Economically Sustainable
+Information Permanence"
+    url: https://www.arweave.org/yellow-paper.pdf
+

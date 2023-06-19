@@ -211,7 +211,7 @@
   set text(7.97224pt)
 
   for author in authors {
-    let keys = ("department", "organization", "location")
+    let keys = ("name", "department", "organization", "location")
 
     let dept-str = keys
       .filter(key => key in author)
