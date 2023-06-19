@@ -1,19 +1,23 @@
 #import "template.typ": *
 #show: ams-article.with(
-  title: "Elecotra Whitepaper",
+  title: "Electora Whitepaper",
   authors: (
     (
-      name: "Ralph Howard",
-      department: [Department of Mathematics],
-      organization: [University of South Carolina],
+      name: "James Campbell",
       location: [Columbia, SC 29208],
-      email: "howard@math.sc.edu",
-      url: "www.math.sc.edu/~howard"
+      url: "https://github.com/theref"
+    ),
+    (
+      name: " Campbell",
+      location: [Columbia, SC 29208],
+      url: "https://github.com/theref"
     ),
   ),
-  abstract: lorem(100),
+  abstract: "Presenting a novel voting system designed to maximize privacy and minimize trust, while maintaining comprehensive verifiability. In this system, voters are able to validate their eligibility without disclosing their identities. Votes, securely encrypted, remain private throughout the voting period, and only become public once this period concludes. This feature provides an opportunity for any third party to audit the election process, from verifying the legitimacy of voter eligibility to the authenticity of the final vote tally, thereby promoting a robust and transparent democratic process.",
   bibliography-file: "refs.bib",
 )
+
+Electora is a privacy preserving, trust minimized, voting system.
 
 Call me Ishmael. Some years ago --- never mind how long precisely ---
 having little or no money in my purse, and nothing particular to
