@@ -23,19 +23,30 @@ When the voting period ends and the CBD condition is satisfied, all votes become
 The system is built entirely with public domain, open-source tools, enhancing transparency and offering users with the requisite technical skills the option to participate independently in the voting process.
 This approach, combining Sismo zkproofs, threshold CBD, and the Arweave storage blockchain, contributes to a voting system that prioritises privacy, verifiability, and minimised trust.
 
-// Modern democratic processes call for innovative approaches to uphold voter privacy while ensuring transparent and verifiable voting mechanisms. This paper delves into a novel voting system that leverages cutting-edge technologies such as Sismo's zk-proofs @sismo, Threshold.Network's Conditions Based Decryption (CBD) @cbd, and the Arweave storage blockchain @arweave, to uphold these principles. Each technology plays a key role in ensuring voter privacy, vote confidentiality, and the verifiability of the voting process.
-
-// Zero-knowledge proofs (zk-proofs), a concept originating from cryptography, allow a party to prove knowledge of a secret without revealing the secret itself. Sismo's zk-proofs @sismo are utilized in this system to ensure voters can confirm their eligibility without the need to disclose their identities. This provides the cornerstone of privacy-preserving voting, enabling eligible voters to participate with assurance that their identities remain confidential.
-
-// The system further employs Threshold.Network's Conditions Based Decryption (CBD) @cbd, a mechanism designed to encrypt all votes, keeping them private until a specified condition is met. In this case, the condition is time-based, meaning that upon the conclusion of the voting period, all votes transition from being encrypted to public. This ensures that during the voting process, the choices of individual voters remain confidential, enhancing the privacy of the voting system.
-
-// Arweave's storage blockchain is utilised to store the encrypted votes and their associated zkproofs. Its unique blockweave architecture provides a data-rich, immutable, and permanently accessible storage solution. This is beneficial for the proposed voting system as it ensures the durability and permanence of voting records, which is critical for future audits and verification of the voting process.
-
-// Once the CBD condition is met and the voting period ends, all votes, now in the public domain, can be accessed by anyone. The associated zkproofs can be verified, ensuring that only eligible votes are counted. This not only assures the integrity of the voting process but also provides a means for any third party to independently audit the election results.
-
-// Finally, this system is built entirely with public domain, open-source tools. This not only enhances the system's transparency but also allows technically adept users to participate in the vote independently, albeit incurring network costs. In conclusion, the combination of Sismo zkproofs, threshold CBD, and the Arweave storage blockchain offers a robust framework for a privacy-preserving, verifiable, and trust-minimized voting system.
 
 == Background
+Electronic voting systems have emerged as a significant area of research and development in the field of information and communication technology, with potential applications in various aspects of governance and political processes.
+The adoption of such systems, however, is not without its challenges and concerns, particularly in terms of security, infrastructure, and implementation.
+
+The concept of electronic voting has been explored in various contexts, including the potential application of blockchain technology in e-voting systems.
+A study by Rahmad et al. @blockchain_e_voting_malaysia provides an overview of blockchain technology towards e-voting in Malaysia, highlighting the potential of blockchain as a secure and transparent platform for voting processes.
+The study underscores the importance of addressing the challenges associated with the implementation of such technology, including issues related to security, privacy, and the digital divide.
+
+Security considerations are paramount in the implementation of electronic voting systems.
+Limba et al. @cyber_security_management_internet_voting delve into the peculiarities of cyber security management in the process of internet voting implementation.
+The study emphasizes the vulnerabilities of personal devices used for e-voting and the potential threats from hackers and foreign intelligence services.
+It suggests that all votes must be encrypted in a way that ensures that a single person is unable to decrypt them, and recommends rules that limit the ability of system administrators to elevate their own privileges.
+
+The complexity of voting systems within social networks is another aspect of electronic voting that has been explored.
+Alouf-Heffetz et al. @comparison_of_voting_systems_social_networks compare different voting systems within social networks, including direct democracy, liquid democracy, and sortition.
+Their research illustrates how voter competency distributions and levels of direct participation affect group accuracy differently in each voting mechanism, providing valuable insights for the selection of a suitable voting system based on the characteristics of a particular voting setting.
+
+However, the limitations of the current deployed infrastructure for remote electronic voting over the Internet are a significant concern.
+Rubin @security_considerations_remote_electronic_voting discusses the security considerations for remote electronic voting, focusing on the limitations of the current infrastructure in terms of the security of the hosts and the Internet itself.
+The study concludes that, at the time of writing (2002), our infrastructure was inadequate for remote Internet voting.
+
+In conclusion, while electronic voting systems offer promising opportunities for enhancing democratic processes, they also present significant challenges that need to be addressed.
+The complexities of these systems, coupled with the security concerns and limitations of the current infrastructure, underscore the need for continued research and development in this field.
 
 = Architecture
 

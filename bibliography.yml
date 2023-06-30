@@ -28,3 +28,44 @@ threshold:
     author: threshold.network
     url: https://docs.threshold.network/
 
+blockchain_e_voting_malaysia:
+  type: Article
+  title: An overview of Blockchain Technology towards E-voting in Malaysia
+  author: 
+    - Fadhilnor Rahmad
+    - Mad Khir Johari Abdullah Sani
+    - Irni Eliana Khairuddin
+  url: https://pdfs.semanticscholar.org/c6ec/fb8a6876d742efaf74a9ee1b5b7d28318e79.pdf
+  year: 2022
+
+cyber_security_management_internet_voting:
+  type: Article
+  title: Peculiarities of Cyber Security Management in the Process of Internet Voting Implementation
+  author: 
+    - Tadas Limba
+    - Konstantin Agafonov
+    - Linas Paukštė
+    - Martynas Damkus
+    - Tomas Plėta
+  url: https://jssidoi.org/jesi/uploads/articles/18/Limba_Peculiarities_of_cyber_security_management_in_the_process_of_internet_voting_implementation.pdf
+  year: 2017
+
+security_considerations_remote_electronic_voting:
+  title: Security Considerations for Remote Electronic Voting over the Internet
+  author: 
+    - A. Rubin
+  url: http://arxiv.org/pdf/cs/0108017
+  year: 2002
+  abstract: This paper discusses the security considerations for remote electronic voting in public elections, particularly the feasibility of running national federal elections over the Internet. The focus is on the limitations of the current deployed infrastructure in terms of the security of the hosts and the Internet itself.
+
+comparison_of_voting_systems_social_networks:
+  type: Article
+  title: How Should We Vote? A Comparison of Voting Systems within Social Networks
+  author: 
+    - Shiri Alouf-Heffetz
+    - Ben Armstrong
+    - Kate Larson
+    - Nimrod Talmon
+  url: https://www.ijcai.org/proceedings/2022/0005.pdf
+  year: 2022
+
