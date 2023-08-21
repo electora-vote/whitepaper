@@ -11,8 +11,8 @@
   abstract: "Presenting a novel voting system designed to maximize privacy and minimize trust, while maintaining comprehensive verifiability. In this system, voters are able to validate their eligibility without disclosing their identities. Votes, securely encrypted, remain private throughout the voting period, and only become public once this period concludes. This feature provides an opportunity for any third party to audit the election process, from verifying the legitimacy of voter eligibility to the authenticity of the final vote tally, thereby promoting a robust and transparent democratic process.",
   bibliography-file: "bibliography.yml",
 )
-= Introduction
-This paper discusses a voting system that utilises Sismo zkproofs @sismo, threshold.network's Conditions Based Decryption (CBD) @cbd, and the Arweave storage blockchain @arweave.
+= Introduction <intro>
+This paper discusses a voting system that utilises Sismo zkproofs @sismo_web, threshold.network's Conditions Based Decryption (CBD) @cbd_web, and the Arweave storage blockchain @arweave.
 Sismo zkproofs, based on zero-knowledge proofs, allow voters to validate their eligibility while keeping their identities hidden.
 In tandem, threshold CBD encrypts all votes, which remain inaccessible until a predetermined time-based condition - the conclusion of the voting period - is met.
 
@@ -23,8 +23,9 @@ When the voting period ends and the CBD condition is satisfied, all votes become
 The system is built entirely with public domain, open-source tools, enhancing transparency and offering users with the requisite technical skills the option to participate independently in the voting process.
 This approach, combining Sismo zkproofs, threshold CBD, and the Arweave storage blockchain, contributes to a voting system that prioritises privacy, verifiability, and minimised trust.
 
+In @background we cover the motivation of the project and the state of current voting systems. In @sismo, @cbd, and @arweave we introduce each of the core components of the protocol. Then, in @architecture we outline the role of each of the components and how they interact with each other.
 
-== Background
+== Background <background>
 Electronic voting systems have emerged as a significant area of research and development in the field of information and communication technology, with potential applications in various aspects of governance and political processes.
 The adoption of such systems, however, is not without its challenges and concerns, particularly in terms of security, infrastructure, and implementation.
 
@@ -48,10 +49,10 @@ The study concludes that, at the time of writing (2002), our infrastructure was 
 In conclusion, while electronic voting systems offer promising opportunities for enhancing democratic processes, they also present significant challenges that need to be addressed.
 The complexities of these systems, coupled with the security concerns and limitations of the current infrastructure, underscore the need for continued research and development in this field.
 
-= Architecture
+= Components <components>
 
-== Sismo
-Sismo @sismo utilises zero-knowledge proofs (ZKPs) and privacy-preserving technologies to aggregate and selectively disclose personal data to applications.
+== Sismo <sismo>
+Sismo @sismo_web utilises zero-knowledge proofs (ZKPs) and privacy-preserving technologies to aggregate and selectively disclose personal data to applications.
 In the context of our voting system, Sismo plays a crucial role in ensuring voters can validate their eligibility without revealing their identities, thus maintaining voter privacy.
 
 Sismo is designed to respond to the challenges of fragmented digital identities, which are dispersed across the internet in a variety of platforms (both web2 and web3).
@@ -63,12 +64,12 @@ These proofs are accepted and verified by verifiers integrated into applications
 This allows users to selectively disclose their data without revealing the associated Data Source, underpinning the privacy-preserving feature of the voting system.
 
 
-== CBD
+== CBD <cbd>
 The voting system incorporates Threshold's Conditions Based Decryption (CBD) @cbd, a cryptographic technique for safeguarding sensitive information.
 CBD encrypts all cast votes, rendering them private and inaccessible until a pre-specified condition is fulfilled.
 In this particular application, the condition for decryption is time-based: the end of the voting period.
 
-CBD operates on the principle of formal verification by a cohort of decentralized nodes within the Threshold network @threshold.
+CBD operates on the principle of formal verification by a cohort of decentralized nodes within the Threshold network @threshold_web.
 Only when the predefined conditions are provably satisfied does the data requester gain decryption rights.
 In the context of our voting system, this means that the votes, initially encrypted by the voter (the data owner), remain completely unreadable to anyone until the voting period concludes.
 
@@ -81,7 +82,29 @@ A minimum number of these nodes, or a threshold, must participate in partial dec
 
 The application of CBD in this voting system represents a leap in privacy-preserving technologies, guaranteeing the confidentiality of votes during the voting process while allowing for public verification once the voting period concludes.
 
-== Arweave
-@arweave
+== Arweave <arweave>
+Outline arweave @arweave_pdf
 
+= Architecture <architecture>
+Describe how everything fits togetherp - probably through the user journey.
 
+== Creating an Election
+- create a sismo group (eligibility criteria)
+- set an end date (becomes the cbd decryption condition)
+- add voting options/candidates
+- write to Ballot Manager contract on scroll
+
+== Participating in an Election
+- navigate to relevant ballot
+- generate a sismo proof of eligibility (belonging to the associated sismo group)
+- pick choice
+- encrypt zk proof + vote in browser
+- store on arweave
+
+== Counting an Election
+- check end time
+- collect relevant votes from arweave (tagged with ballot id)
+- decrypt everything, discard anythig invalid
+- verify all proofs, discard anything invalid
+- remove any duplicated proofs (proofs will be unique but they return and anonimized user id)
+- Publish and count everything that is left

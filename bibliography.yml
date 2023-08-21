@@ -1,16 +1,16 @@
-sismo:
+sismo_web:
     type: Web
     title: Sismo Documentation
     author: Sismo
     url: https://docs.sismo.io/sismo-docs/
 
-cbd:
+cbd_web:
     type: Web
     title: CBD Documentation
     author: threshold.network
     url: https://docs.threshold.network/applications/threshold-access-control/conditions-based-decryption-cbd
 
-arweave:
+arweave_pdf:
     type: Article
     author:
         - Williams, Sam
@@ -22,7 +22,7 @@ arweave:
 Information Permanence"
     url: https://www.arweave.org/yellow-paper.pdf
 
-threshold:
+threshold_web:
     type: Web
     title: Threshold Documentation
     author: threshold.network
