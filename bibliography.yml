@@ -69,3 +69,64 @@ comparison_of_voting_systems_social_networks:
   url: https://www.ijcai.org/proceedings/2022/0005.pdf
   year: 2022
 
+Decentralized_Voting_Application_Using_Blockchain:
+  type: Article
+  title: Decentralized Voting Application Using Blockchain
+  year: 2021
+  author:
+    - Hrithvick Rao Rewatkar
+    - Devansh Agarwal
+    - Anmol Khandelwal
+    - Subho Upadhyay
+  doi: 10.1109/CSNT51715.2021.9509561
+  page-range: 735-739
+  parent:
+    type: Conference
+    title: 2021 10th IEEE International Conference on Communication Systems and Network Technologies (CSNT)
+    publisher: IEEE
+
+SecurityAnalysisOfVoatz_Public:
+  type: Article
+  title: "The Ballot is Busted Before the Blockchain: A Security Analysis of Voatz"
+  author:
+    - Michael A. Specter
+    - James Koppel
+    - Daniel Weitzner
+  year: 2020
+  pages: 1535–1552
+  parent:
+    publisher: USENIX Association
+    title: Proceedings of the 29th USENIX Conference on Security Symposium
+     
+bad_to_worse:
+  type: Article
+  title: "Going from bad to worse: from Internet voting to blockchain voting"
+  author:
+    - Sunoo Park
+    - Michael Specter
+    - Neha Narula
+    - Ronald L. Rivest
+  year: 2021
+  journal: Journal of Cybersecurity
+  doi: 10.1093/cybsec/tyaa025
+
+review_on_distributed_tech_for_voting:
+  type: Article
+  title: A Review on Distributed Blockchain Technology for E-voting Systems
+  author:
+    - Rihab H Sahib
+    - Eman S. Al-Shamery
+  year: 2021
+  doi: 10.1088/1742-6596/1804/1/012050
+
+evoting_meets_blockchain:
+  type: Article
+  title: "E-Voting Meets Blockchain: A Survey"
+  author:
+    - MARIA-VICTORIA VLADUCU
+    - ZIQIAN DONG
+    - JORGE MEDINA
+    - ROBERTO ROJAS-CESSA
+  year: 2023
+  journal: IEEE Access
+  doi: 10.1109/ACCESS.2023.3253682
